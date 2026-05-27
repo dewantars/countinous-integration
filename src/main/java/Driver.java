@@ -4,20 +4,16 @@ public class Driver {
 		
 		Counter counter = new Counter();
 		
-		printHasilCount(counter);
+		System.out.println("Hasil Count:" + counter.getCount());
 		
 		counter.increment();
 		
-		printHasilCount(counter);
+		System.out.println("Hasil Count:" + counter.getCount());
 		
 		counter.decrement();
 		
-		printHasilCount(counter);
-
-	}
-
-	public static void printHasilCount(Counter counter) {
 		System.out.println("Hasil Count:" + counter.getCount());
+		
 	}
 
 }
