@@ -43,7 +43,16 @@ jobs:
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
 
     - name: SonarQube analysis
-      run: mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar --file pom.xml
+      run: >
+        mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:5.6.0.6792:sonar
+        --file pom.xml
+        -Dsonar.projectKey=dewantars_continuous-integration
+        -Dsonar.organization=dewantars
+        -Dsonar.host.url=https://sonarcloud.io
+        -Dsonar.sources=src/main/java
+        -Dsonar.tests=src/test/java
+        -Dsonar.java.binaries=target/classes
+        -Dsonar.junit.reportPaths=target/surefire-reports
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
