@@ -6,8 +6,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>ContohProject</artifactId>
-    <version>0.0.2</version>
+    <artifactId>contoh-project</artifactId>
+    <version>0.0.3</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- Dependency untuk Unit Test menggunakan JUnit 4 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -28,7 +27,6 @@
 
     <build>
         <plugins>
-            <!-- Plugin untuk compile Java -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -39,14 +37,12 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin untuk menjalankan unit test -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
 
-            <!-- Plugin untuk deploy artifact -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -55,7 +51,6 @@
         </plugins>
     </build>
 
-    <!-- Tujuan deploy artifact Maven -->
     <distributionManagement>
         <repository>
             <id>github</id>
