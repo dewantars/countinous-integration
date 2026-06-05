@@ -7,7 +7,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>contoh-project</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -55,7 +55,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/dewantarahmasatria/ContohProject</url>
+            <url>https://maven.pkg.github.com/dewantars/countinous-integration</url>
         </repository>
     </distributionManagement>
 
